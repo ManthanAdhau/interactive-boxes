@@ -5,11 +5,11 @@ It recreates an interactive UI where boxes expand on click and reveal selectable
 
 ## 🔗 Live Demo
 
-👉 https://your-live-link-here
+👉 https://manthanadhau.github.io/interactive-boxes/
 
 ## 📂 Repository
 
-👉 https://github.com/your-username/interactive-boxes
+👉 https://github.com/ManthanAdhau/interactive-boxes
 
 ## ✨ Features
 
