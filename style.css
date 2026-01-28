@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #ff6b81;
+  --border-color: #e5e5e5;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bundle-container {
+  width: 350px;
+  border: 1px solid transparent;
+}
+
+.header-line {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 0.1em;
+}
+
+.header-line span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.option-box {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-box.active {
+  border: 2px solid var(--primary-color);
+  background-color: #fff9fa;
+}
+
+/* Badge styling */
+.most-popular-badge {
+  position: absolute;
+  top: -12px;
+  right: 15px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 10px;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/* Flex layout for header */
+.option-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unit-text {
+  font-weight: bold;
+}
+
+.discount-tag {
+  background: var(--primary-color);
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  margin-left: 5px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 12px;
+}
+
+/* Expanding Logic */
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.active .expandable-content {
+  max-height: 200px;
+  margin-top: 15px;
+}
+
+/* Custom Table/Inputs inside expanded box */
+table {
+  width: 100%;
+  border-spacing: 0 5px;
+}
+th {
+  font-size: 12px;
+  text-align: left;
+  font-weight: normal;
+}
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  width: 100%;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.powered-by {
+  text-align: right;
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 5px;
+}

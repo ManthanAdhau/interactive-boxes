@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bundle & Save - Selection UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bundle-container">
+      <div class="header-line">
+        <span>YAY! It’s BOGO</span>
+      </div>
+
+      <div class="option-box" onclick="selectOption(this)">
+        <div class="option-header">
+          <label class="radio-container">
+            <input type="radio" name="bundle" value="1" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="option-info">
+            <div class="unit-text">
+              1 Unit <span class="discount-tag">10% Off</span>
+            </div>
+            <div class="sub-text">Standard Price</div>
+          </div>
+          <div class="price-section">
+            <div class="current-price">$10.00 USD</div>
+            <div class="old-price">$24.00 USD</div>
+          </div>
+        </div>
+        <div class="expandable-content"></div>
+      </div>
+
+      <div class="option-box active" onclick="selectOption(this)">
+        <div class="most-popular-badge">MOST POPULAR</div>
+        <div class="option-header">
+          <label class="radio-container">
+            <input type="radio" name="bundle" value="2" checked />
+            <span class="checkmark"></span>
+          </label>
+          <div class="option-info">
+            <div class="unit-text">
+              2 Unit <span class="discount-tag">20% Off</span>
+            </div>
+          </div>
+          <div class="price-section">
+            <div class="current-price">$18.00 USD</div>
+            <div class="old-price">$24.00 USD</div>
+          </div>
+        </div>
+        <div class="expandable-content">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Size</th>
+                <th>Colour</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1</td>
+                <td>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>#2</td>
+                <td>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option>Colour</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="option-box" onclick="selectOption(this)">
+        <div class="option-header">
+          <label class="radio-container">
+            <input type="radio" name="bundle" value="3" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="option-info">
+            <div class="unit-text">
+              3 Unit <span class="discount-tag">30% Off</span>
+            </div>
+          </div>
+          <div class="price-section">
+            <div class="current-price">$24.00 USD</div>
+            <div class="old-price">$24.00 USD</div>
+          </div>
+        </div>
+        <div class="expandable-content"></div>
+      </div>
+
+      <div class="footer-info">
+        <span class="free-delivery">Free Delivery</span>
+        <span class="total-price">Total : $18.00 USD</span>
+      </div>
+
+      <button class="add-to-cart">+ Add to Cart</button>
+      <div class="powered-by">@ Powered by Pumper</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
